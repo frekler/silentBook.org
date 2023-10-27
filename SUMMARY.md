@@ -1,0 +1,73 @@
+# Summary​
+# Table of contents
+    
+## Reconnaissance
+* [Search Engines](/reconnaissance/search.md)
+    * [Google Dorks](/reconnaissance/search/google_dorks.md)
+* OSINT
+    * [Recon-ng](/reconnaissance/osint/recon-ng.md)
+    * [cloud_enum](/reconnaissance/osint/cloud_enum.md)
+    * [buster](/reconnaissance/osint/buster.md)
+    * [Photo search](/reconnaissance/osint/photo_search.md)
+    * [Maltego](/reconnaissance/osint/maltego.md)
+    * [Nickname](/reconnaissance/osint/nickname.md)
+    * [IP](/reconnaissance/osint/ip.md)
+    * [GEO](/reconnaissance/osint/geo.md)
+    * [Email](/reconnaissance/osint/email.md)
+    * [Phone number](/reconnaissance/osint/phone_number.md)
+    * [Company](/reconnaissance/osint/company.md)
+    * [Name](/reconnaissance/osint/name.md)
+* Network
+    * [Nmap](/reconnaissance/network/nmap.md)
+    * [Wireshark](/reconnaissance/network/wireshark.md)
+    * [Gobuster](/reconnaissance/network/gobuster.md)
+    * [RustScan](/reconnaissance/network/rustscan.md)
+    * [dnscan](/reconnaissance/network/dnscan.md)
+    * [ZAP](/reconnaissance/network/zap.md)
+    * [Burp Suite](/reconnaissance/network/burp_suite.md)
+    * [WhatWeb](/reconnaissance/network/whatweb.md)
+    * [Scapy](/reconnaissance/network/scapy.md)
+* Vulnerability
+    * [Nessus](/reconnaissance/vulnerability/nessus.md)
+    * [OpenVAS](/reconnaissance/vulnerability/openvas.md)
+    * [WPScan](/reconnaissance/vulnerability/wpscan.md)
+    * [Nikto](/reconnaissance/vulnerability/nikto.md)
+
+## Exploitation
+* [SQL Injection](/exploitation/sql_injection.md)
+    * [sqlmap](/exploitation/sqlmap.md)
+* [Cross-Site Scripting (XSS)](/exploitation/xss.md)
+    * [Xspear](/exploitation/xspear.md)
+* [Insecure Direct Object References (IDOR)](/exploitation/idor.md)
+* Log_Aggregation
+    * [RedELK](/exploitation/redelk.md)
+    * [RedEye](/exploitation/redeye.md)
+* Remote Access Tools (RAT)
+    * [Cobalt Strike](/exploitation/cobalt_strike.md)
+* [Reverse Shell](/exploitation/reverse_shell.md)
+* [Binary](/exploitation/binary.md)
+* [Botnet](/exploitation/botnet.md)
+
+## Reference
+* [DNS records](/reference/dns_records.md)
+* [Markdown](/reference/markdown.md)
+* [ChatGPT Prompts](/reference/chatgpt.md)
+* [Books (non-technical)](/reference/books.md)
+* [iptables](/reference/iptables.md)
+* [Purism](/reference/purism.md)
+* [Platforms](/reference/platforms.md)
+* [Python](/reference/python.md)
+* [JavaScript](/reference/js/js.md)
+    * [Types](/reference/js/types.md) 
+    * [Operators](/reference/js/operators.md)  
+    * [IF...ELSE](/reference/js/if_else.md)  
+    * [WHILE & FOR](/reference/js/while_for.md)
+    * [Arrays](/reference/js/arrays.md)
+    * [Functions](/reference/js/functions.md)
+* [CWE](/reference/cwe.md)
+* [People](/reference/people.md)
+* [SQL](/reference/sql.md)
+* [Ports](/reference/ports.md)
+* [Darkweb](/reference/darkweb.md)
+
+# * [About](READMY.md)
