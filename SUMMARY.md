@@ -57,13 +57,20 @@
 * [ChatGPT Prompts](/reference/chatgpt.md)
 * [Books (non-technical)](/reference/books.md)
 * [iptables](/reference/iptables.md)
-* [Purism](/reference/purism.md)
 * [Platforms](/reference/platforms.md)
 * [CWE](/reference/cwe.md)
 * [People](/reference/people.md)
 * [SQL](/reference/sql.md)
 * [Ports](/reference/ports.md)
 * [Darkweb](/reference/darkweb.md)
+
+## Tools
+* [Raspberry Pi](/tools/raspberry-pi.md)
+* [Flipper Zero](/tools]/flipper-zero.md)
+* [PN532](/tools/pn532.md)
+* [USB Rubber Ducky](/tools/usb-rubber-ducky.md)
+* [Purism](/tools/purism.md)
+* [DSTIKE](/tools/dstike.md)
 
 ## Dev
 * [Python](/dev/python.md)

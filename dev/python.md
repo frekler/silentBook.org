@@ -12,3 +12,5 @@ asyncio (RUS):
 7: <https://habr.com/ru/companies/wunderfund/articles/711012/>  
 8: <https://habr.com/ru/companies/wunderfund/articles/715126/>  
 9: <https://habr.com/ru/companies/wunderfund/articles/716740/>  
+
+https://stackoverflow.com/questions/52830307/conda-remove-all-installed-packages-from-base-root-environment

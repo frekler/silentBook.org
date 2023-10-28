@@ -1,0 +1,1 @@
+https://shop.hak5.org/products/usb-rubber-ducky

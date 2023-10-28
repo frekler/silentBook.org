@@ -226,3 +226,9 @@ razmusorim.ru
 размусорим.рф
 vseecologi
 oureco.ru
+
+
+
+zsh command not found  
+https://www.easeus.com/computer-instruction/zsh-command-not-found.html  
+https://stackoverflow.com/questions/18428374/in-mac-always-getting-zsh-command-not-found  

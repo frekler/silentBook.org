@@ -1,0 +1,1 @@
+https://flipperzero.one/
