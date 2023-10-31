@@ -272,6 +272,18 @@ console.log(arr.includes('Вася'));      // false
 console.log(arr.includes('Иштван', 2)); // false
 ```
 
+```js
+// [[1], [2, 3], [4]], 3 ) => 1
+const nestedArr = (arr, number) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].includes(number)) {
+      return i;
+    }
+  }
+  return -1; // Return -1, если число не найдено во вложенных массивах
+}
+```
+
 ## find
 
 поиск в массиве объектов с определённым условием
