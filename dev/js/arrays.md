@@ -446,6 +446,14 @@ let arr = ['Ваня', 'Иштван', 'Оля'];
 console.log(String(arrTwo));
 ```
 
+```js
+// ['I', 'am', 'who I am'] => 'I am who I am'
+
+const toSentence = (arr) => {
+  return arr.join(' ');
+}
+```
+
 ---
 
 # Массив или объект?

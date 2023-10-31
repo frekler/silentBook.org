@@ -79,6 +79,7 @@
     * [Operators](/dev/js/operators.md)  
     * [IF...ELSE](/dev/js/if_else.md)  
     * [WHILE & FOR](/dev/js/while_for.md)
+    * [Objects](/dev/js/objects.md)
     * [Arrays](/dev/js/arrays.md)
     * [Functions](/dev/js/functions.md)
 * [CSS](/dev/css.md)

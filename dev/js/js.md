@@ -23,6 +23,12 @@ console.log(Number.MIN_SAFE_INTEGER);
 > `TypeError: Cannot mix BigInt and other types`
 
 
+
+0b111 - начиная с 0b - двоичное представление  
+0xff 0x - шестандцатиричном представлении  
+0o77 - восьмиричное представление  
+
+
 https://learn.javascript.ru/
 
 [Types](/reference/js/types.md)  
