@@ -533,36 +533,8 @@ arr.forEach(function (item, index, array) {
 });
 ```
 
-```js
-// let arr = ['Ваня', 'Иштван', 'Оля',];
-arr.forEach(function (item, index, array) {
-    console.log(`${item} находится на ${index} позиции в ${array}`);
-})
+[More forEach](./foreach.md)  
 
-/*  выведет:
-Ваня находится на 0 позиции в Ваня,Иштван,Оля
-Иштван находится на 1 позиции в Ваня,Иштван,Оля
-Оля находится на 2 позиции в Ваня,Иштван,Оля
- */
-
-// ИЛИ
-// СТРЕЛОЧНАЯ ФУНКЦИЯ
-arr.forEach(item, index, array) => {
-    console.log(`${item} находится на ${index} позиции в ${array}`);
-}
-```
-
-Также при использовании метода forEach мы можем указывать просто имя некой отдельной функции и работать все будет точно также:
-
-```js
-let arr = ['Ваня', 'Иштван', 'Оля',];
-
-arr.forEach(show);
-
-function show(item) {
-    console.log(item);
-}
-```
 
 ## reduce/reduceRight
 
