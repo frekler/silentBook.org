@@ -108,6 +108,7 @@
     * [WHILE & FOR](./dev/js/while_for.md)
     * [Object](./dev/js/object.md)
     * [Arrays](./dev/js/array.md)
+      * [forEach](./dev/js/foreach.md)
     * [Function](./dev/js/function.md)
 * [CSS](./dev/css.md)
 * [HTML](./dev/html.md)
