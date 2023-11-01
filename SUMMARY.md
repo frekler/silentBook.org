@@ -107,7 +107,7 @@
     * [IF...ELSE](./dev/js/if_else.md)  
     * [WHILE & FOR](./dev/js/while_for.md)
     * [Object](./dev/js/object.md)
-    * [Arrays](./dev/js/array.md)
+    * [Array](./dev/js/array.md)
       * [forEach](./dev/js/foreach.md)
     * [Function](./dev/js/function.md)
 * [CSS](./dev/css.md)
