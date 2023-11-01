@@ -533,7 +533,7 @@ arr.forEach(function (item, index, array) {
 });
 ```
 
-[More forEach](./foreach.md)  
+[More forEach](foreach.md)  
 
 
 ## reduce/reduceRight
