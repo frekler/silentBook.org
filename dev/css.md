@@ -11,6 +11,15 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/font
 https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
 
 
+<https://learn.javascript.ru/css-selectors>
+<https://www.w3schools.com/css/css_display_visibility.asp>
+<https://www.freecodecamp.org/news/css-display-none-and-visibility-hidden-the-difference/>
+
+
+
+<https://codepen.io/enjikaka/pen/zxdYjX/left>
+
+
 
 
 ```css
@@ -180,3 +189,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
 https://stackoverflow.com/questions/3245141/using-otf-fonts-on-web-browsers  
 
 https://stackoverflow.com/questions/69938882/how-to-change-svg-fill-on-hover  
+
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/transform>
+
+<https://stackoverflow.com/questions/39056537/why-don-t-svg-images-scale-using-the-css-width-property>
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/display>
+<https://stackoverflow.com/questions/3740949/css3-get-last-element>
+
+<https://jsfiddle.net/6e84tk0s/>
+
+<https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items>
+
+<https://stackoverflow.com/questions/7123138/how-to-make-this-header-content-footer-layout-using-css>
+
+<https://philipwalton.github.io/solved-by-flexbox/>
+
+<https://alistapart.com/article/holygrail/>

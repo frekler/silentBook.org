@@ -10,6 +10,8 @@ Math.ceil() - округление к наибольшему
 // === строгое сравнение
 
 // && - И - смотрит, являются ли ВСЕ значения truthy и если да - вернёт последнее из этих truthy значений.
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND>
+
 // НО если хотя бы одно из них будет falsy, то вернёт первое из этих falsy значений.
 // оператор "писсимист" (ищет тьму в свету)
 console.log(5 && 'Ку' && 0 && true && '' & {}) // 0
@@ -27,3 +29,7 @@ console.log(5 || 'Ку' || 0 || true || '' || {}) // 5
 console.log(!100) // false (приведение к булеану и выдал противоположное значение)
 console.log(!0) // true (приведение к булеану и выдал противоположное значение)
 
+
+<https://learn.javascript.ru/comparison>
+<https://learn.javascript.ru/operators>
+<https://learn.javascript.ru/bitwise-operators>

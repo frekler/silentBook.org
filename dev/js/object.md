@@ -7,3 +7,6 @@ const objValue = (obj, key) => {
 }
 
 ```
+
+
+<https://learn.javascript.ru/object>

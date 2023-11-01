@@ -446,6 +446,8 @@ console.log(arrTwo);    // ['Ваня', 'Иштван']
 
 ```arr.join(glue)```
 
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join>
+
 ```js
 let arr = ['Ваня', 'Иштван', 'Оля'];
 let str = arr.join(',');
@@ -693,3 +695,6 @@ forEach, for или for..of.
 
 Методы arr.reduce и arr.reduceRight похожи на эти методы, но они немного сложнее
 и используются для вычисления какого-нибудь единого значения на основе всего массива.
+
+
+<https://learn.javascript.ru/array>

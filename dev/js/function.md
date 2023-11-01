@@ -46,6 +46,25 @@ function foo() {
 
 
 
+еще пример  
+
+```js
+function foo(a) {
+  return (function (b) {
+    return b;
+  })(a);
+}
+
+foo(10);
+
+// result foo = 10
+// args foo = 10
+// args of anonymous function = 10
+
+```
+
+
+
 ```js
 function foo(a1, b2) {
     return a1 + b2;   //  результат выполнения функции
@@ -75,3 +94,13 @@ console.log(start(5));
 ```
 
 
+
+
+<https://learn.javascript.ru/closure>
+
+замыкание js
+
+
+Anonymous Functions:
+
+https://www.javascripttutorial.net/javascript-anonymous-functions/
