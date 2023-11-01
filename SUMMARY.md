@@ -103,6 +103,7 @@
 * [Python](./dev/python.md)
 * [JavaScript](./dev/js/js.md)
     * [Types](./dev/js/types.md) 
+    * [DOM](./dev/js/dom.md) 
     * [Operators](./dev/js/operators.md)  
     * [IF...ELSE](./dev/js/if_else.md)  
     * [WHILE & FOR](./dev/js/while_for.md)
