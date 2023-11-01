@@ -49,8 +49,6 @@
   * [dig](reconnaissance/subdomain/dig.md)
   * [subfinder](reconnaissance/subdomain/subfinder.md)
   * [sublist3r](reconnaissance/subdomain/sublist3r.md)
-
-## OSINT
 * [OSINT](osint/osint.md)
   * [Recon-ng](osint/recon-ng.md)
   * [cloud_enum](osint/cloud_enum.md)
