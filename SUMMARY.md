@@ -4,18 +4,18 @@
 
 ## Reconnaissance
 
-* [Search Engines](reconnaissance/search.md)
+* [Search Engines](reconnaissance/search/README.md)
   * [Google Dorks](reconnaissance/search/google_dorks.md)
   * [Google Login Dorks](reconnaissance/search/google_login_dorks.md)
 * [API](reconnaissance/api/README.md)
   * [Graphqlmap](reconnaissance/api/graphqlmap.md)
   * [Postman](reconnaissance/api/postman.md)
-* [Directory-Fuzzing]
+* [Directory-Fuzzing](reconnaissance/directory-fuzzing/README.md)
   * [Dirbuster](reconnaissance/directory-fuzzing/dirbuster.md)
   * [Ffuf](reconnaissance/directory-fuzzing/ffuf.md)
   * [Gobuster](reconnaissance/directory-fuzzing/gobuster.md)
   * [Wfuzz](reconnaissance/directory-fuzzing/wfuzz.md)
-* [Exploit]
+* [Exploit](reconnaissance/exploit/README.md)
   * [ExploitDB](reconnaissance/exploit/exploitdb.md)
   * [Searchsploit](reconnaissance/exploit/searchsploit.md)
 * [Network](reconnaissance/network/README.md)
@@ -49,7 +49,7 @@
   * [dig](reconnaissance/subdomain/dig.md)
   * [subfinder](reconnaissance/subdomain/subfinder.md)
   * [sublist3r](reconnaissance/subdomain/sublist3r.md)
-* [OSINT](reconnaissance/osint/osint.md)
+* [OSINT](reconnaissance/osint/README.md)
   * [Recon-ng](reconnaissance/osint/recon-ng.md)
   * [cloud_enum](reconnaissance/osint/cloud_enum.md)
   * [buster](reconnaissance/osint/buster.md)
