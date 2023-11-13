@@ -110,6 +110,7 @@
     * [Object](./dev/js/object.md)
     * [Array](./dev/js/array.md)
       * [forEach](./dev/js/foreach.md)
+      * [Array.from()](./dev/js/array.from.md)
     * [Function](./dev/js/function.md)
 * [CSS](./dev/css.md)
 * [HTML](./dev/html.md)
