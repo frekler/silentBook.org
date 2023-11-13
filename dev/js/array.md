@@ -93,7 +93,8 @@ console.log(arr);   // 'Коля', 'Иштван', 'Оля', 'Ваня'
 **delete** удаление конкретных элементов  
 **splice** добавляет, удаляет и заменяет элементы  
 **slice** создает новый массив, в который копирует часть, либо весь массив  
-**concat** создает дубль массива и может дополнить его значениями  
+**concat** создает дубль массива и может дополнить его значениями 
+**Array.from** static method creates a new, shallow-copied Array instance from an iterable or array-like object.
 
 ## push
 
@@ -236,6 +237,10 @@ let arrOne = ['Ваня', 'Иштван', 'Оля', ];
 let arrTwo = arrOne.concat('Петя');
 console.log(arrTwo);    // 'Ваня', 'Иштван', 'Оля', Петя
 ```
+
+## Array.from()
+[More Array.from()](array.from.md)  
+
 
 ---
 
