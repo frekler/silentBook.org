@@ -1,5 +1,7 @@
 # Создание массива
 
+
+
 ```js
 let arr = [];
 ```
@@ -50,6 +52,8 @@ console.log(matrix[0][1]);      // выведет: 2
 console.log(arr.length);
 ```
 
+Можно обрезать длину массива
+
 #  Доступ к массиву
 
 Т.к. массив является объектом и, следовательно, ведёт себя как объект. Например, копируется по ссылке.
@@ -66,6 +70,18 @@ arrNew.length = 2;  // укорачиваем массив
 console.log(arr);   // массив стал короче: "Ваня", "Иштван"
 
 // у массива просто появилось два разных ключа
+```
+
+### Способы копирования массивов
+
+```js
+let arr1 = [1, 2, 3, ['d', 'f'], null, undefined, () => console.log('dfs')];
+let arr2 = arr1.slice(0)
+let arr2 = [...arr1]
+let arr2 =JSON.stringify(arr1)
+let arr2 = JSON.parse(JSON.stringify(arr1))
+let arr2 = structuredClone(arr1)
+let arr2 = arr1.flat(Infinity)
 ```
 
 ## Изменение значений массива
@@ -85,6 +101,23 @@ console.log(arr);   // 'Коля', 'Иштван', 'Оля', 'Ваня'
 ---
 
 # Методы массивов
+
+
+
+|Метод|Для чего|Что возвращает|Мутирует ли исходный|
+|-----|--------|--------------|--------------------|
+|push|добавляет элемент в конец массива|новую длину массива|мутирует|
+
+
+
+
+
+
+
+// ! Изучая любой метод массива, запомните:
+// * 1. Что делает / для чего он?
+// * 2. Что он возвращает?
+// * 3. Мутирует ли он исходный массив?
 
 **push** добавляет элемент в конец массива  
 **shift** удаляет элемент в начале (так что второй элемент становится первым)  
@@ -329,26 +362,8 @@ console.log(resultTwo); // 1
 ## filter
 
 ищет все элементы, на которых функция-колбэк вернет true
+[More filter](./array.filter.md)  
 
-```js
-let results = arr.filter(function (item, index, array) {
-    // если true - элемент добавляется к результату, и перебор продолжается
-    // возвращается пустой массив в случае, если ничего не найдено
-}
-```
-
-```js
-let arr = [
-    { name: 'Вася', age: 36 },
-    { name: 'Коля', age: 18 },
-    { name: 'Оля', age: 'не скажу' },
-]
-
-let result = arr.filter(function (item, index, array) {
-    return item.age >= 18;
-});
-console.log(result);    // новый массив из двух элементов {name Вася..., Коля}
-```
 
 ---
 
@@ -391,6 +406,7 @@ console.log(arrTwo.sort((a, b) => a - b));
 // console.log(arrTwo.sort((a, b) => a - b));
 
 // console.log(arrTwo.sort(compareNumeric));
+
 ```
 
 ## reverse
@@ -429,6 +445,11 @@ let result = arr.map(function (item, index, array) {
 // let result = arr.map(item => item[0]);
 console.log(arr);   // 'Ваня', 'Иштван', 'Оля'
 console.log(result);    // 'В', 'И', 'О'
+```
+
+```js
+// еще пример
+let newArr = arr.map((el) => el + 1)
 ```
 
 ## split
@@ -524,6 +545,8 @@ for (let i = 0; i < arr.length; i++) {
 
 ## for..of
 
+соблюдает массивную индексацию 
+
 ```js
 let arr = ['Ваня', 'Иштван', 'Оля',];
 
@@ -605,6 +628,11 @@ let reduceValueTwo = arrTwo.reduce(function (previousValue, item, index, array) 
     return `${item}, ${previousValue}`; // Иштван, Ваня             \n Оля???????? проверить
 });
 console.log(`Пользователи: ${reduceValueOne}`)  // Оля, Иштван, Ваня
+```
+
+```js
+// Еще пример
+let newArr4 = arr5.reduce((acc, cur) => acc + cur, 0)
 ```
 
 Метод reduceRight работает аналогично, но проходит по массиву справа налево.
@@ -703,3 +731,23 @@ forEach, for или for..of.
 
 
 <https://learn.javascript.ru/array>
+
+
+
+
+Удаление "пустых" элементов в массиве (необходимо проверить код)
+
+```js
+let arr10 = [1, 2, undefined, null, 5 ,7, 0]
+console.log(arr10.filter((el) => el !== null && el !== undefined));
+```
+
+
+
+
+Визуализация других методов
+https://ghost-together.medium.com/map-filter-and-reduce-animated-7fe391a35a47
+
+
+Статья на freecodecamp
+https://www.freecodecamp.org/news/javascript-map-reduce-and-filter-explained-with-examples/

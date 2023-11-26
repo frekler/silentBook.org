@@ -12,3 +12,6 @@ const generateNames = (num) => {
     return Array.from({ length: num}, () => randomProfile.name());
 }
 console.log(generateNames(3));
+
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from>

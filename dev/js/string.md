@@ -32,7 +32,10 @@ let newString = string.split(' ').join('');
 console.log(newString); // "Javascriptisawesome!"
 ```
 
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split>
+
 
 toUpperCase
+toLow...
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase>

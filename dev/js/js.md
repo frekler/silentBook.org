@@ -6,6 +6,15 @@ Sandboxes:
 https://plnkr.co/  
 coderpad.io
 
+В JS все есть объект
+
+Функциональный подход:
+Мы можем описать все в виде действий, т.е. в виде функций.
+Функции - конструкторы... (дописать)
+
+ООП
+все есть объект
+
 ```js
 console.log(Number.MAX_SAFE_INTEGER);
 // 9007199254740991
@@ -84,3 +93,15 @@ https://stackoverflow.com/questions/5278197/html-tags-in-javascript-alert-method
 https://stackoverflow.com/questions/1232793/javascript-set-img-src
 https://teamtreehouse.com/community/getelementsbyclassname-versus-queryselector
 https://elbrusboot.camp/blog/chto-takoie-brauziernyie-sobytiia/
+
+
+
+Документация Mozilla
+https://developer.mozilla.org/ru/docs/Web/JavaScript
+
+
+Интерактивная шпаргалка JS
+https://htmlcheatsheet.com/js
+
+Random Profile Generator
+https://www.npmjs.com/package/random-profile-generator
