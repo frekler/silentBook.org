@@ -44,15 +44,15 @@ console.log(Number.MIN_SAFE_INTEGER);
 
 https://learn.javascript.ru/
 
-[Types](/reference/js/types.md)  
-[Operators](/reference/js/operators.md)  
-[IF...ELSE](/reference/js/if_else.md)  
-[WHILE & FOR](/reference/js/while_for.md)  
-[arrays](/reference/js/arrays.md)
-[Class](/reference/js/class.md)  
-[OOP](/reference/js/oop.md) 
-[Jest](/reference/js/jest.md) 
-[fs](/reference/js/fs.md) 
+[Types](/dev/js/types.md)  
+[Operators](/dev/js/operators.md)  
+[IF...ELSE](/dev/js/if_else.md)  
+[WHILE & FOR](/dev/js/while_for.md)  
+[arrays](/dev/js/arrays.md)
+[Class](/dev/js/class.md)  
+[OOP](/dev/js/oop.md) 
+[Jest](/dev/js/jest.md) 
+[fs](/dev/js/fs.md) 
 
 [process.argv](/dev/js/process.argv.md)
 
