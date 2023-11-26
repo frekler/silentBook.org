@@ -15,6 +15,10 @@ coderpad.io
 ООП
 все есть объект
 
+
+
+
+
 ```js
 console.log(Number.MAX_SAFE_INTEGER);
 // 9007199254740991
@@ -45,6 +49,10 @@ https://learn.javascript.ru/
 [IF...ELSE](/reference/js/if_else.md)  
 [WHILE & FOR](/reference/js/while_for.md)  
 [arrays](/reference/js/arrays.md)
+[Class](/reference/js/class.md)  
+[OOP](/reference/js/oop.md) 
+[Jest](/reference/js/jest.md) 
+[fs](/reference/js/fs.md) 
 
 [process.argv](/dev/js/process.argv.md)
 
