@@ -36,8 +36,9 @@ Basic script to start the server on a local machine
 touch app.js
 ```
 
-app.js:
+
 ```js
+// app.js
 const express = require('express');
 
 const app = express();
