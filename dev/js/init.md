@@ -1,12 +1,13 @@
 ## project init
 
 ```sh
-npm i
-```
-or
-```sh
 npm init -y
 ```
+or (if package.json already exists)
+```sh
+npm i
+```
+
 
 ## gitignore
 
@@ -26,14 +27,10 @@ npx eslint --init
 npm i express
 ```
 
-## nodemon, morgan
 
-```sh
-npm i -D nodemon morgan
-```
 
 ## app.js
-Базовый скрит для запуска сервера на локальной машине
+Basic script to start the server on a local machine
 
 ```sh
 touch app.js
@@ -42,21 +39,37 @@ touch app.js
 app.js:
 ```js
 const express = require('express');
-const morgan = require('morgan');
 
 const app = express();
 const PORT = 3000;
-
-app.use(morgan('dev'));
 
 app.listen(PORT, () => {
   console.log(`Server starting on PORT ${PORT}`);
 });
 ```
 
-extra:
+### nodemon, morgan
+
+```sh
+npm i -D nodemon morgan
+```
+
+app.js:
 ```js
+const morgan = require('morgan');
+app.use(morgan('dev'));
+```
+
+### extra app.js
+app.js
+```js
+const path = require('path');
 app.use(express.static(path.join(process.cwd(), 'public')));
+app.use(express.urlencoded({ extended: true })); // * мидлварка, для
+// * получения req.body в POST 
+// * { extended: true } - увеличение объёма передаваемых данных
+app.use(express.json()); // * читать JSON - данные из тела запросов
+// * Если не подключил - то JSON в тело не зайдёт
 ```
 
 ## PostgreSql, sequelize
@@ -126,23 +139,26 @@ npx sequelize db:seed:all
 
 
 Проверка подключения к базе через sequelize
+
+/db/dbConnectCheck.js:
 ```js
-const { Sequelize } = require('sequelize')
+const { sequelize } = require('./models');
 
-const sequelize = new Sequelize('studentswhales', 'whale2', '1', {
-  host: 'localhost',
-  dialect: 'postgres',
-});
-
-async function checkConnect() {
+module.exports = async () => {
   try {
-    await sequelize.authenticate()
-    console.log('БАЗА ПОДКЛЮЧЕНА!')
+    await sequelize.authenticate();
+    console.log('База данных успешно подключена! :)');
   } catch (error) {
-    console.log('БАЗА НЕ ПОДКЛЮЧЕНАЯ ==>', error)
+    console.error('База данных не подключена:', error.message);
   }
-}
-checkConnect()
+};
+
+```
+
+app.js
+```js
+const dbConnectionCheck = require('../db/dbConnectCheck');
+dbConnectionCheck();
 ```
 
 ## cookies, sessions, bcrypt
@@ -159,7 +175,7 @@ const session = require('express-session')
 const FileStore = require('session-file-store')(session)
 
 const sessionConfig = {
-  name: 'WhalesCookie',
+  name: 'DolphinsCookie',
   store: new FileStore(),
   secret: process.env.SESSION_SECRET ?? 'Секретное слово',
   resave: false, // * если true, пересохранит сессию, даже если она не менялась
@@ -167,8 +183,8 @@ const sessionConfig = {
   cookie: {
     maxAge: 9999999, // * время жизни в мс (ms)
     httpOnly: true,
-  }
-}
+  },
+};
 
 app.use(session(sessionConfig))
 ```
@@ -214,7 +230,7 @@ require('dotenv').config()
 app.js:
 ```js
 require('dotenv').config()
-const PORT = process.env.PORT || 3000;
+const { PORT } = process.env || 3000;
 ```
 
 database.json:
