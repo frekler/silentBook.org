@@ -55,15 +55,16 @@ app.listen(PORT, () => {
 npm i -D nodemon morgan
 ```
 
-app.js:
 ```js
+// app.js
 const morgan = require('morgan');
 app.use(morgan('dev'));
 ```
 
 ### extra app.js
-app.js
+
 ```js
+// app.js
 const path = require('path');
 app.use(express.static(path.join(process.cwd(), 'public')));
 app.use(express.urlencoded({ extended: true })); // * мидлварка, для
@@ -80,8 +81,8 @@ npm i sequelize sequelize-cli pg pg-hstore
 touch .sequelizerc
 ```
 
-.sequelizerc:
 ```js
+// .sequelizerc
 const path = require('path');
 
 module.exports = {
@@ -96,8 +97,9 @@ module.exports = {
 npx sequelize init
 ```
 
-database.json:
-```
+
+```json
+// database.json
 ...
 ```
 
@@ -138,11 +140,11 @@ npx sequelize db:seed:all
 ```
 
 
-
 Проверка подключения к базе через sequelize
 
-/db/dbConnectCheck.js:
+
 ```js
+// /db/dbConnectCheck.js
 const { sequelize } = require('./models');
 
 module.exports = async () => {
@@ -156,8 +158,8 @@ module.exports = async () => {
 
 ```
 
-app.js
 ```js
+// app.js
 const dbConnectionCheck = require('../db/dbConnectCheck');
 dbConnectionCheck();
 ```
@@ -170,8 +172,9 @@ npm i express-session session-file-store bcrypt
 
 добавить папку sessions в gitignore
 
-app.js:
+
 ```js
+// app.js
 const session = require('express-session')
 const FileStore = require('session-file-store')(session)
 
@@ -198,8 +201,9 @@ npm i @babel/core @babel/preset-env @babel/preset-react @babel/register react re
 touch .babelrc
 ```
 
-.babelrc:
-```
+
+```json
+// .babelrc
 {
   "presets": [
     "@babel/preset-env",
@@ -222,20 +226,23 @@ PORT=3000
 DB=[dialect]://[user]:[password]@[host]:[port]/[db name]
 ```
 
-.sequelizerc:
-```
+
+```js
+// .sequelizerc
 require('dotenv').config()
 ```
 
 
-app.js:
+
 ```js
+// app.js
 require('dotenv').config()
 const { PORT } = process.env || 3000;
 ```
 
-database.json:
+
 ```json
+// database.json
 "development": {
     "use_env_variable": "DB",
     "dialect": "postgres"
@@ -250,8 +257,9 @@ database.json:
 ## хуки
 
 
-package.json:
+
 ```json
+// package.json
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js --ignore sessions -ext js,jsx",
