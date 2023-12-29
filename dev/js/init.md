@@ -29,7 +29,7 @@ npm i express
 
 
 
-## app.js
+## basic server
 Basic script to start the server on a local machine
 
 ```sh
@@ -67,11 +67,11 @@ app.use(morgan('dev'));
 // app.js
 const path = require('path');
 app.use(express.static(path.join(process.cwd(), 'public')));
-app.use(express.urlencoded({ extended: true })); // * мидлварка, для
-// * получения req.body в POST 
-// * { extended: true } - увеличение объёма передаваемых данных
-app.use(express.json()); // * читать JSON - данные из тела запросов
-// * Если не подключил - то JSON в тело не зайдёт
+// for static files on the frontend
+app.use(express.urlencoded({ extended: true }));
+// to receive req.body in POST, { extended: true } - increase the amount of transmitted data
+app.use(express.json());
+// read JSON - data from request body; if don’t connect it, then the JSON will not enter the body
 ```
 
 ## PostgreSql, sequelize
@@ -107,32 +107,32 @@ npx sequelize init
 npx sequelize db:create
 ```
 
-Создаём модели
+Models:
 ```sh
 npx sequelize-cli model:generate --name Sites --attributes siteName:string,rate:integer,ownerId:integer
 ```
 
-Накатываем миграции
+Migrations:
 ```sh
 npx sequelize db:migrate
 ```
-чтобы отменить:
+To undo migrations:
 ```sh
 npx sequelize db:migrate:undo:all
 ```
 
-Засидим таблицы
+Seeding:
 ```sh
 npx sequelize seed:generate --name Seed
 npx sequelize db:seed:all
 ```
 
-чтобы отменить:
+Seed undo:
 ```sh
 npx sequelize db:seed:undo:all
 ```
 
-Для заполнения базы через faker:
+Seeding db using faker:
 ```sh
 npm i @faker-js/faker
 npx sequelize-cli seed:generate --name User
@@ -140,7 +140,7 @@ npx sequelize db:seed:all
 ```
 
 
-Проверка подключения к базе через sequelize
+###  Checking connection to the database using sequelize
 
 
 ```js
@@ -150,9 +150,9 @@ const { sequelize } = require('./models');
 module.exports = async () => {
   try {
     await sequelize.authenticate();
-    console.log('База данных успешно подключена! :)');
+    console.log('Database successfully connected! :)');
   } catch (error) {
-    console.error('База данных не подключена:', error.message);
+    console.error('Database not connected:', error.message);
   }
 };
 
@@ -170,7 +170,10 @@ dbConnectionCheck();
 npm i express-session session-file-store bcrypt
 ```
 
-добавить папку sessions в gitignore
+```json
+// .gitignore
+sessions
+```
 
 
 ```js
@@ -182,10 +185,10 @@ const sessionConfig = {
   name: 'DolphinsCookie',
   store: new FileStore(),
   secret: process.env.SESSION_SECRET ?? 'Секретное слово',
-  resave: false, // * если true, пересохранит сессию, даже если она не менялась
-  saveUninitialized: false, // * если false, куки появятся только при установке req.session
+  resave: false, // if true, will resave the session even if it has not changed
+  saveUninitialized: false, // if false, cookies will only appear when req.session is set
   cookie: {
-    maxAge: 9999999, // * время жизни в мс (ms)
+    maxAge: 9999999, // lifetime in ms
     httpOnly: true,
   },
 };
@@ -254,7 +257,7 @@ const { PORT } = process.env || 3000;
 
 
 
-## хуки
+## hooks
 
 
 
@@ -268,7 +271,7 @@ const { PORT } = process.env || 3000;
   },
 ```
 
-Теперь:
+Using:
 ```sh
 npm run dev
 ```
