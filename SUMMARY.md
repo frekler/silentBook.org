@@ -102,6 +102,7 @@
 ## Dev
 * [Python](./dev/python.md)
 * [JavaScript](./dev/js/README.md)
+    * [init](./dev/js/init.md) 
     * [Types](./dev/js/types/README.md) 
       * [Object](./dev/js/types/object.md)
       * [Array](./dev/js/types/array/README.md)

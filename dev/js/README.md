@@ -1,3 +1,7 @@
+[init](/dev/js/init.md)
+
+
+
 Sandboxes:  
 <https://trycode.pw>  
 <https://playcode.io/javascript>  
