@@ -230,7 +230,7 @@ database.json:
 
 
 
-### хуки
+## хуки
 
 
 package.json:
