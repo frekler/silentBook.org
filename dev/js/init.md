@@ -44,6 +44,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
+!!!!!!!! ОДИН ПУТЬ
+
+
 app.listen(PORT, () => {
   console.log(`Server starting on PORT ${PORT}`);
 });
@@ -109,7 +112,7 @@ npx sequelize db:create
 
 Models:
 ```sh
-npx sequelize-cli model:generate --name Sites --attributes siteName:string,rate:integer,ownerId:integer
+npx sequelize-cli model:generate --name User --attributes email:string,username:string,password:string,description:text,birthday:date,vip:boolean,friends:integer
 ```
 
 Migrations:
@@ -126,6 +129,8 @@ Seeding:
 npx sequelize seed:generate --name Seed
 npx sequelize db:seed:all
 ```
+
+Dont forget about `new Date()` in createdAt and updatedAt
 
 Seed undo:
 ```sh
@@ -150,7 +155,7 @@ const { sequelize } = require('./models');
 module.exports = async () => {
   try {
     await sequelize.authenticate();
-    console.log('Database successfully connected! :)');
+    console.log('Database successfully connected!');
   } catch (error) {
     console.error('Database not connected:', error.message);
   }
@@ -170,21 +175,21 @@ dbConnectionCheck();
 npm i express-session session-file-store bcrypt
 ```
 
-```json
-// .gitignore
+```sh
+# .gitignore
 sessions
 ```
 
 
 ```js
 // app.js
-const session = require('express-session')
-const FileStore = require('session-file-store')(session)
+const session = require('express-session'); // req.session создает
+const FileStore = require('session-file-store')(session); // "база данных" наших сессий создает папку и файлы сессий
 
 const sessionConfig = {
-  name: 'DolphinsCookie',
+  name: 'Cookie',
   store: new FileStore(),
-  secret: process.env.SESSION_SECRET ?? 'Секретное слово',
+  secret: process.env.SESSION_SECRET ?? 'secret word',
   resave: false, // if true, will resave the session even if it has not changed
   saveUninitialized: false, // if false, cookies will only appear when req.session is set
   cookie: {
@@ -193,7 +198,14 @@ const sessionConfig = {
   },
 };
 
-app.use(session(sessionConfig))
+app.use(session(sessionConfig));
+```
+
+```js
+// route.js
+const bcrypt = require('bcrypt')
+
+
 ```
 
 
@@ -201,6 +213,9 @@ app.use(session(sessionConfig))
 
 ```sh
 npm i @babel/core @babel/preset-env @babel/preset-react @babel/register react react-dom
+```
+
+```sh
 touch .babelrc
 ```
 
@@ -220,11 +235,14 @@ touch .babelrc
 
 ```sh
 npm i dotenv
+```
+
+```sh
 touch .env
 ```
 
-.env:
-```
+```sh
+# .env
 PORT=3000
 DB=[dialect]://[user]:[password]@[host]:[port]/[db name]
 ```
